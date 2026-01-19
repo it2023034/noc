@@ -12,20 +12,20 @@
         <div class="col-md-6">
             <div class="card shadow">
                 <div class="card-header bg-primary text-white">
-                    <h4 class="mb-0"><i class="bi bi-shield-lock"></i> Ταυτοποίηση Gov.gr</h4>
+                    <h4 class="mb-0"><i class="bi bi-shield-lock"></i> Gov.gr Authentication</h4>
                 </div>
                 <div class="card-body">
-                    <p class="text-muted">Εισάγετε τα στοιχεία σας για να συνδεθείτε στην υπηρεσία.</p>
+                    <p class="text-muted">Enter your details to sign in to the service.</p>
 
                     <form th:action="@{/gov/login}" method="post">
                         <div class="mb-3">
-                            <label class="form-label font-weight-bold">ΑΦΜ</label>
+                            <label class="form-label font-weight-bold">Tax ID (AFM)</label>
                             <input type="text" name="afm" class="form-control form-control-lg"
-                                   placeholder="π.χ. 123456789" required pattern="\d{9}">
+                                   placeholder="e.g. 123456789" required pattern="\d{9}">
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label font-weight-bold">Κινητό Τηλέφωνο</label>
+                            <label class="form-label font-weight-bold">Mobile Phone</label>
                             <div class="input-group">
                                 <span class="input-group-text">+30</span>
                                 <input type="text" name="phone" class="form-control form-control-lg"
@@ -35,7 +35,7 @@
 
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary btn-lg">
-                                Σύνδεση & Επιστροφή
+                                Sign in & Return
                             </button>
                         </div>
                     </form>
